@@ -1,0 +1,20 @@
+[package]
+name = "explicit_reinitialization"
+version = "0.1.0"
+authors = ["authors go here"]
+description = "description goes here"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+clippy_utils = { git = "https://github.com/rust-lang/rust-clippy", rev = "a95afe2d0a2051d97b723b0b197393b7811bc4e4" }
+dylint_linting = "3.2.1"
+
+[dev-dependencies]
+dylint_testing = "3.2.1"
+
+[package.metadata.rust-analyzer]
+rustc_private = true
